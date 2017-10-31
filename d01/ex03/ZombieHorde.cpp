@@ -7,6 +7,10 @@ ZombieHorde::ZombieHorde(int n) : _size(n) {
 
 	srand(time(NULL));
 	this->_horde = new Zombie*[this->_size];
+	if (n < 0) {
+		this->_size = 0
+		return ;
+	}
 	for (int i = 0; i < this->_size; i++) {
 		this->_horde[i] = new Zombie(name[rand() % 6], type[rand() % 5]);
 	}
