@@ -33,5 +33,7 @@ int		main(int argc, const char *argv[]) {
 		}
 		fout << buff << std::endl;
 	}
+	fin.close();
+	fout.close();
 	return (0);
 }
