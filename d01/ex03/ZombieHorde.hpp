@@ -12,7 +12,7 @@ public:
 void	announce(void) const;
 
 private:
-	Zombie	**_horde;
+	Zombie	*_horde;
 	int		_size;
 
 };
