@@ -136,6 +136,12 @@ void FragTrap::vaulthunter_dot_exe(std::string const & target) {
 		"Recompiling my combat code!"
 	};
 
+	if (_ep < 25) {
+			std::cout << "(" << _name << ") " << "not enough energy" << std::endl;
+		return ;
+	}
+	_ep -= 25;
+
 	std::cout << "(" << _name << ") ";
 	std::cout << phrase[rand() % 5] << std::endl;
 
