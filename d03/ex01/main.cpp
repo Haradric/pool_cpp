@@ -1,10 +1,11 @@
 
 #include "FragTrap.hpp"
+#include "ScavTrap.hpp"
 
 int		main( void ) {
 
 	FragTrap	a( "FR4G-TP" );
-	FragTrap	b( "5H4D0W-TP" );
+	ScavTrap	b( "5H4D0W-TP" );
 
 	srand(time(NULL));
 
@@ -26,10 +27,10 @@ int		main( void ) {
 	b.takeDamage( 90 );
 	b.beRepaired( 50 );
 	b.beRepaired( 150 );
-	b.vaulthunter_dot_exe( "FR4G-TP" );
-	b.vaulthunter_dot_exe( "FR4G-TP" );
-	b.vaulthunter_dot_exe( "FR4G-TP" );
-	b.vaulthunter_dot_exe( "FR4G-TP" );
-	b.vaulthunter_dot_exe( "FR4G-TP" );
+	b.challengeNewcomer( "FR4G-TP" );
+	b.challengeNewcomer( "FR4G-TP" );
+	b.challengeNewcomer( "FR4G-TP" );
+	b.challengeNewcomer( "FR4G-TP" );
+	b.challengeNewcomer( "FR4G-TP" );
 
 }
