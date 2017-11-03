@@ -115,7 +115,7 @@ void ScavTrap::introducePhrase( void ) {
 	};
 
 	std::cout << "(" << _name << ") ";
-	std::cout << phrase[rand() % 5] << std::endl;
+	std::cout << phrase[rand() % 3] << std::endl;
 }
 
 void ScavTrap::challengeNewcomer(std::string const & target) {
