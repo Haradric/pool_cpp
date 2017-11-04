@@ -1,0 +1,28 @@
+
+#include "RadScorpion.hpp"
+
+RadScorpion::RadScorpion( void ) : Enemy( 80, "RadScorpion" ) {
+
+	std::cout << "* click click click *" << std::endl;
+}
+
+RadScorpion::RadScorpion( int hp, std::string const & type ) : Enemy( hp, type ) {
+
+	std::cout << "* click click click *" << std::endl;
+}
+
+RadScorpion::RadScorpion( RadScorpion const & target ) : Enemy( target ) {
+
+	std::cout << "* click click click *" << std::endl;
+}
+
+RadScorpion::~RadScorpion( void ) {
+
+	std::cout << "* SPROTCH *" << std::endl;
+}
+
+RadScorpion & RadScorpion::operator=( RadScorpion const & target) {
+
+	Enemy::operator=( target );
+	return *this;
+}
