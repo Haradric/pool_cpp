@@ -30,12 +30,12 @@ Form & Form::operator=( Form const & target ) {
 
 const char* Form::GradeTooHighException::what( void ) const throw() {
 
-	return "maximum grade is 1";
+	return "grade is too high";
 }
 
 const char* Form::GradeTooLowException::what( void ) const throw() {
 
-	return "maximum grade is 1";
+	return "grade is too low";
 }
 
 std::string Form::getName( void ) const {
