@@ -60,8 +60,11 @@ int Form::getExeclvl( void ) const {
 
 void Form::beSigned( Bureaucrat const & target ) {
 
-	if ( target.getGrade() > _signlvl )
+	if ( target.getGrade() > _signlvl ) {
+		std::cout << target.getName() << " cannot sign " << _name << " because ";
 		throw GradeTooLowException();
+	}
+	std::cout << target.getName() << " signs " << _name << std::endl;
 	_signed = true;
 }
 
