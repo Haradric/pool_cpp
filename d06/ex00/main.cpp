@@ -38,7 +38,10 @@ int main( int argc, char ** argv ) {
 	std::cout << "float: ";
 	try {
 		float f = static_cast<float>( conv );
-		std::cout << f << "f";
+		if ( !( f - static_cast<long int>( f ) ) )
+			std::cout << f << ".0f";
+		else
+			std::cout << f << "f";
 	}
 	catch( std::exception &e )
 	{
@@ -48,8 +51,11 @@ int main( int argc, char ** argv ) {
 
 	std::cout << "double: ";
 	try {
-		double f = static_cast<double>( conv );
-		std::cout << f;
+		double d = static_cast<double>( conv );
+		if ( !( d - static_cast<long long int>( d ) ) )
+			std::cout << d << ".0";
+		else
+			std::cout << d;
 	}
 	catch( std::exception &e )
 	{

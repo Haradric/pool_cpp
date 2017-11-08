@@ -55,7 +55,7 @@ StringConverter::operator float(void) const {
 	float n = std::atof(this->_str.c_str());
 	if ( errno ) {
 		errno = 0;
-		throw (ConversionErrorException());
+		throw ( ConversionErrorException() );
 	}
 	return n;
 }
@@ -65,7 +65,7 @@ StringConverter::operator double(void) const {
 	double n = std::strtod(this->_str.c_str(), NULL);
 	if ( errno ) {
 		errno = 0;
-		throw (ConversionErrorException());
+		throw ( ConversionErrorException() );
 	}
 	return n;
 }
