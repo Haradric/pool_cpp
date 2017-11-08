@@ -20,7 +20,6 @@ Base * generate( void ) {
 			std::cout << "created instance of C" << std::endl;
 			return new C();
 	}
-	std::cout << "blya" << std::endl;
 	return NULL;
 }
 
