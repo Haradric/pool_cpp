@@ -46,7 +46,7 @@ public:
 
 	T & operator[]( unsigned int i ) {
 
-		if ( !_arr || i >= _size )
+		if (i >= _size )
 			throw std::out_of_range( "no such an element" );
 		return _arr[i];
 	}
